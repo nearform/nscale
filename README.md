@@ -1,7 +1,7 @@
 
 # nfd
 
-<img align="right" width="200" src="https://raw.githubusercontent.com/nearform/nfd/master/docs/images/logo.png">
+<img align="right" width="150" src="https://raw.githubusercontent.com/nearform/nfd/master/docs/images/logo.png">
 
 > A toolkit for application deployments and container management
 
@@ -13,7 +13,7 @@ nfd is an open source project to configure, build and deploy a set of connected 
 $ npm install -g nfd
 ```
 
-nfd depends on [Node.js](http://nodejs.org/), [npm](http://npmjs.org/) and [git](http://git-scm.com/).
+nfd depends on [nodejs](http://nodejs.org/), [npm](http://npmjs.org/) and [git](http://git-scm.com/).
 
 ## Usage
 
