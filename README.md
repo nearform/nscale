@@ -21,6 +21,12 @@ nfd depends on [nodejs](http://nodejs.org/), [npm](http://npmjs.org/) and [git](
 $ nfd-server -c /path/to/config.json
 ```
 
+## nfd command line usage
+
+```sh
+$ nfd help
+```
+
 ## Getting started
 
 ### Getting started using boot2docker
