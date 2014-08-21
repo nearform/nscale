@@ -15,10 +15,10 @@ $ npm install -g nfd
 
 nfd depends on [nodejs](http://nodejs.org/), [npm](http://npmjs.org/) and [git](http://git-scm.com/).
 
-## Usage
+## Running nfd
 
 ```sh
-$ nfd help
+$ nfd-server -c /path/to/config.json
 ```
 
 ## Getting started
@@ -30,9 +30,6 @@ Depends on [boot2docker](https://github.com/boot2docker/boot2docker)
 ```sh
 boot2docker up
 ```
-
-
-
 
 ## License
 
