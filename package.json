@@ -3,10 +3,11 @@
   "description": "nfd",
   "keywords": [
   ],
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "bin": {
-    "nfd": "./node_modules/nearform-cli/bin/nfd.js"
+    "nfd": "./node_modules/nearform-cli/bin/nfd.js",
+    "nfd-server": "./node_modules/nfd-kernel/bin/nfd-kernel.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
     "node": "*"
   },
   "dependencies": {
-    "nfd-client": "git+ssh://git@github.com:nearform/nfd-client.git"
+    "nfd-client": "git+ssh://git@github.com:nearform/nfd-client.git",
+    "nfd-kernel": "git+ssh://git@github.com:nearform/nfd-kernel.git"
   }
 }
