@@ -21,21 +21,37 @@ nfd depends on [nodejs](http://nodejs.org/), [npm](http://npmjs.org/) and [git](
 $ nfd-server -c /path/to/config.json
 ```
 
-## nfd command line usage
-
-```sh
-$ nfd help
-```
-
 ## Getting started
 
-### Getting started using boot2docker
+### Setup boot2docker
 
 Depends on [boot2docker](https://github.com/boot2docker/boot2docker)
 
 ```sh
 boot2docker up
 ```
+
+### Clone nfd demo
+
+```sh
+nfd system clone git@github.com:nearform/nfddemo.git
+```
+
+### Build web container
+
+```sh
+nfd container build nfdemo web
+```
+
+### Deploy nfdemo
+
+```sh
+nfd system deploy nfdemo
+```
+
+### Open nfdemo in the browser
+
+[http://localhost:8000](http://localhost:8000)
 
 ## License
 
