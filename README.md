@@ -23,7 +23,7 @@ $ nfd-server -c /path/to/config.json
 
 ## Getting started
 
-### Setup boot2docker
+### Run boot2docker
 
 Depends on [boot2docker](https://github.com/boot2docker/boot2docker)
 
