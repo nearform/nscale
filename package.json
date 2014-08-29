@@ -1,17 +1,20 @@
 {
-  "name": "nfd",
-  "description": "nfd",
+  "name": "nscale",
+  "description": "nscale",
   "keywords": [
+    "deployment",
+    "docker",
+    "scale"
   ],
-  "version": "0.0.2",
-  "license": "MIT",
+  "version": "0.0.3",
+  "license": "Artistic License 2.0",
   "bin": {
-    "nfd": "./node_modules/nearform-cli/bin/nfd.js",
-    "nfd-server": "./node_modules/nfd-kernel/bin/nfd-kernel.js"
+    "nsd": "./node_modules/nfd-client/bin/nfd.js",
+    "nsd-server": "./node_modules/nfd-kernel/bin/nfd-kernel.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nearform/nfd.git"
+    "url": "https://github.com/nearform/nscale.git"
   },
   "author": "Nearform (http://nearform.com/)",
   "contributors": [
