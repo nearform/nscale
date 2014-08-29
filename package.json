@@ -9,21 +9,20 @@
   "version": "0.0.3",
   "license": "Artistic License 2.0",
   "bin": {
-    "nsd": "./node_modules/nfd-client/bin/nfd.js",
-    "nsd-server": "./node_modules/nfd-kernel/bin/nfd-kernel.js"
+    "nsd": "./node_modules/nscale-client/bin/nsd.js",
+    "nsd-server": "./node_modules/nscale-kernel/bin/nscale-kernel.js"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/nearform/nscale.git"
   },
   "author": "Nearform (http://nearform.com/)",
-  "contributors": [
-  ],
+  "contributors": [],
   "engines": {
     "node": "*"
   },
   "dependencies": {
-    "nfd-client": "git+ssh://git@github.com:nearform/nfd-client.git",
-    "nfd-kernel": "git+ssh://git@github.com:nearform/nfd-kernel.git"
+    "nscale-client": "^0.1.0",
+    "nscale-kernel": "^0.1.0"
   }
 }
