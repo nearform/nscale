@@ -12,6 +12,9 @@
     "nsd": "./node_modules/nscale-client/bin/nsd.js",
     "nsd-server": "./node_modules/nscale-kernel/bin/nscale-kernel.js"
   },
+  "scripts" : {
+    "postinstall" : "node ./lib/postinstall.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/nearform/nscale.git"
