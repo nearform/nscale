@@ -26,6 +26,6 @@
   },
   "dependencies": {
     "nscale-client": "^0.1.0",
-    "nscale-kernel": "^0.1.0"
+    "nscale-kernel": "^0.1.1"
   }
 }
