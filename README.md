@@ -1,24 +1,24 @@
 
-# nfd
+# nscale
 
-<img align="right" width="150" src="https://raw.githubusercontent.com/nearform/nfd/master/docs/images/logo.png">
+<img align="right" width="150" src="https://raw.githubusercontent.com/nearform/nscale/master/docs/images/logo.png">
 
 > A toolkit for application deployments and container management
 
-nfd is an open source project to configure, build and deploy a set of connected containers to constitute a working platform for distributed applications.
+__nscale__ is an open source project to configure, build and deploy a set of connected containers to constitute a working platform for distributed applications.
 
 ## Install
 
 ```sh
-$ npm install -g nfd
+$ npm install -g nscale
 ```
 
-nfd depends on [nodejs](http://nodejs.org/), [npm](http://npmjs.org/) and [git](http://git-scm.com/).
+__nscale__ depends on [nodejs](http://nodejs.org/), [npm](http://npmjs.org/) and [git](http://git-scm.com/).
 
-## Running nfd
+## Running nscale
 
 ```sh
-$ nfd-server -c /path/to/config.json
+$ nsd-server -c /path/to/config.json
 ```
 
 ## Getting started
@@ -34,19 +34,19 @@ boot2docker up
 ### Clone nfd demo
 
 ```sh
-nfd system clone git@github.com:nearform/nfddemo.git
+nsd system clone git@github.com:nearform/nfddemo.git
 ```
 
 ### Build web container
 
 ```sh
-nfd container build nfdemo web
+nsd container build nfdemo web
 ```
 
 ### Deploy nfdemo
 
 ```sh
-nfd system deploy nfdemo
+nsd system deploy nfdemo
 ```
 
 ### Open nfdemo in the browser
@@ -57,4 +57,4 @@ nfd system deploy nfdemo
 
 Copyright (c) 2014 Nearform and other contributors
 
-Licensed under the MIT License
+Licensed under the Artistic License 2.0
