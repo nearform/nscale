@@ -53,8 +53,11 @@ nsd container build nfddemo web
 
 ### Deploy nfd demo
 
+Replace \<revision_id\> with the latest revision shown by the revision list command.
+
 ```sh
-nsd system deploy nfddemo
+nsd revision list nfddemo
+nds revision deploy nfddemo <revision_id>
 ```
 
 ### Open nfd demo in the browser
