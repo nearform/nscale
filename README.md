@@ -18,7 +18,7 @@ __nscale__ depends on [nodejs](http://nodejs.org/), [npm](http://npmjs.org/) and
 ## Running nscale
 
 ```sh
-$ nsd-server -c /path/to/config.json
+$ nsd-server -c /usr/local/etc/nscale/config.json
 ```
 
 ## Getting started
@@ -29,6 +29,14 @@ Depends on [boot2docker](https://github.com/boot2docker/boot2docker)
 
 ```sh
 boot2docker up
+```
+
+### Login
+
+By default, login uses the email defined in ~/.gitconfig and that is all that is required.
+
+```sh
+nsd login
 ```
 
 ### Clone nfd demo
@@ -51,7 +59,9 @@ nsd system deploy nfdemo
 
 ### Open nfdemo in the browser
 
-[http://localhost:8000](http://localhost:8000)
+```sh
+open http://$(boot2docker ip):8000
+```
 
 ## License
 
