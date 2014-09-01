@@ -57,7 +57,7 @@ Replace \<revision_id\> with the latest revision shown by the revision list comm
 
 ```sh
 nsd revision list nfddemo
-nds revision deploy nfddemo <revision_id>
+nsd revision deploy nfddemo <revision_id>
 ```
 
 ### Open nfd demo in the browser
