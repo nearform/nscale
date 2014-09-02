@@ -10,7 +10,7 @@ __nscale__ is an open source project to configure, build and deploy a set of con
 ## Install
 
 ```sh
-$ npm install -g nscale
+npm install -g nscale
 ```
 
 __nscale__ depends on [nodejs](http://nodejs.org/), [npm](http://npmjs.org/) and [git](http://git-scm.com/).
@@ -18,7 +18,7 @@ __nscale__ depends on [nodejs](http://nodejs.org/), [npm](http://npmjs.org/) and
 ## Running nscale
 
 ```sh
-$ nsd-server -c /usr/local/etc/nscale/config.json
+nsd-server -c /usr/local/etc/nscale/config.json
 ```
 
 ## Getting started
