@@ -1,0 +1,73 @@
+{
+  "env": "development",
+  "kernel": {
+    "port": "8010",
+    "systemsRoot": "/usr/local/var/nscale/data/systems",
+    "buildRoot": "/usr/local/var/nscale/data/build",
+    "targetRoot": "/usr/local/var/nscale/data/targets"
+  },
+  "api": {
+    "port": 3000,
+    "sdkhost": "localhost",
+    "sdkport": "3223",
+    "https": false,
+    "cors": {
+      "allowedDomains": ["http://localhost:9000"]
+    },
+    "github": {
+      "scope": ["repo", "user:email"],
+      "clientID": "CLIENT_ID",
+      "clientSecret": "SECRET",
+      "urlhost": "http://localhost:3000",
+      "redirect": {
+        "success": "http://localhost:9000/home",
+        "failure": "http://localhost:9000"
+      }
+    }
+  },
+  "web": {
+    "ip": "0.0.0.0",
+    "port": 9000,
+    "apiserver": "http://localhost:3000",
+    "apibase": "/api/1.0"
+  },
+  "modules": {
+    "protocol": {
+      "require": "nscale-protocol",
+      "specific": {
+      }
+    },
+    "authorization": {
+      "require": "nscale-noauth",
+      "specific": {
+        "credentialsPath": "/usr/local/var/nscale/data"
+      }
+    },
+    "analysis": {
+      "require": "nscale-boot2docker-analyzer",
+      "specific": {
+        "name": "nfddemo",
+        "namespace": "nfddemo",
+        "systemId": "12341234213432143",
+        "dockerFilters": ["web"]
+      }
+    }
+  },
+  "containers": [
+    {"require": "aws-elb-container",
+     "type": "aws-elb",
+     "specific": { "region": "eu-west-1" }},
+    {"require": "aws-ami-container",
+     "type": "aws-ami",
+     "specific": { "region": "eu-west-1" }},
+    {"require": "virtualbox-container",
+     "type": "virtualbox",
+     "specific": {}},
+    {"require": "docker-container",
+     "type": "docker",
+     "specific": {"imageCachePath": "/tmp"}},
+    {"require": "boot2docker-container",
+     "type": "boot2docker",
+     "specific": {"imageCachePath": "/tmp"}}]
+}
+
