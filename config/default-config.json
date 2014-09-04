@@ -1,5 +1,4 @@
 {
-  "env": "development",
   "kernel": {
     "port": "8010",
     "systemsRoot": "/usr/local/var/nscale/data/systems",
