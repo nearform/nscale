@@ -18,7 +18,7 @@ __nscale__ depends on [nodejs](http://nodejs.org/), [npm](http://npmjs.org/) and
 ## Running nscale
 
 ```sh
-nsd-server -c /usr/local/etc/nscale/config.json
+nsd server start
 ```
 
 ## Getting started
@@ -64,6 +64,26 @@ nsd revision deploy nfddemo <revision_id>
 
 ```sh
 open http://$(boot2docker ip):8000
+```
+
+### Open web gui
+
+```sh
+open http://localhost:9000
+```
+
+### Logs
+
+```sh
+tail -f /usr/local/var/log/nscale/server.log
+tail -f /usr/local/var/log/nscale/api.log
+tail -f /usr/local/var/log/nscale/web.log
+```
+
+### Help
+
+```sh
+nsd help
 ```
 
 ## License
