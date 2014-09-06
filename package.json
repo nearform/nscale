@@ -29,7 +29,7 @@
   "dependencies": {
     "nscale-web": "^0.1.9",
     "nscale-api": "^0.1.6",
-    "nscale-client": "^0.1.3",
+    "nscale-client": "^0.1.4",
     "nscale-kernel": "^0.1.3"
   }
 }
