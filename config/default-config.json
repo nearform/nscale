@@ -1,9 +1,9 @@
 {
   "kernel": {
     "port": "8010",
-    "systemsRoot": "/usr/local/var/nscale/data/systems",
-    "buildRoot": "/usr/local/var/nscale/data/build",
-    "targetRoot": "/usr/local/var/nscale/data/targets"
+    "systemsRoot": "$NSCALE_ROOT/data/systems",
+    "buildRoot": "$NSCALE_ROOT/data/build",
+    "targetRoot": "$NSCALE_ROOT/data/targets"
   },
   "api": {
     "port": 3000,
@@ -39,7 +39,7 @@
     "authorization": {
       "require": "nscale-noauth",
       "specific": {
-        "credentialsPath": "/usr/local/var/nscale/data"
+        "credentialsPath": "$NSCALE_ROOT/data"
       }
     },
     "analysis": {
