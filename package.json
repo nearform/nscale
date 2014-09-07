@@ -6,7 +6,7 @@
     "docker",
     "scale"
   ],
-  "version": "0.1.20",
+  "version": "0.1.21",
   "license": "Artistic License 2.0",
   "bin": {
     "nsd": "./node_modules/nscale-client/bin/nsd.js",
@@ -15,7 +15,7 @@
     "nsd-server": "./node_modules/nscale-kernel/bin/nscale-kernel.js"
   },
   "scripts" : {
-    "postinstall" : "node ./lib/postinstall.js"
+    "postinstall" : "sudo node ./lib/postinstall.js"
   },
   "repository": {
     "type": "git",
