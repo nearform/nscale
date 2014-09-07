@@ -6,7 +6,7 @@
     "docker",
     "scale"
   ],
-  "version": "0.1.23",
+  "version": "0.1.25",
   "license": "Artistic License 2.0",
   "bin": {
     "nsd": "./node_modules/nscale-client/bin/nsd.js",
@@ -29,7 +29,7 @@
   "dependencies": {
     "nscale-web": "^0.1.10",
     "nscale-api": "^0.1.6",
-    "nscale-client": "^0.1.6",
+    "nscale-client": "^0.1.7",
     "nscale-kernel": "^0.1.6"
   }
 }
