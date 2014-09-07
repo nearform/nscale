@@ -45,28 +45,17 @@
     "analysis": {
       "require": "nscale-boot2docker-analyzer",
       "specific": {
-        "name": "nfddemo",
-        "namespace": "nfddemo",
-        "systemId": "12341234213432143",
-        "dockerFilters": ["web"]
+        "name": "nscaledemo",
+        "namespace": "nscaledemo",
+        "systemId": "12341234213432143"
       }
     }
   },
   "containers": [
-    {"require": "aws-elb-container",
-     "type": "aws-elb",
-     "specific": { "region": "eu-west-1" }},
-    {"require": "aws-ami-container",
-     "type": "aws-ami",
-     "specific": { "region": "eu-west-1" }},
     {"require": "virtualbox-container",
      "type": "virtualbox",
      "specific": {}},
-    {"require": "docker-container",
-     "type": "docker",
-     "specific": {"imageCachePath": "/tmp"}},
     {"require": "boot2docker-container",
      "type": "boot2docker",
      "specific": {"imageCachePath": "/tmp"}}]
 }
-
