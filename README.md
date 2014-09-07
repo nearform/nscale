@@ -39,28 +39,28 @@ By default, login uses the email defined in ~/.gitconfig and that is all that is
 nsd login
 ```
 
-### Clone nfd demo
+### Clone nscale demo
 
 ```sh
-nsd system clone git@github.com:nearform/nfddemo.git
+nsd system clone git@github.com:nearform/nscaledemo.git
 ```
 
 ### Build web container
 
 ```sh
-nsd container build nfddemo web
+nsd container build nscaledemo web
 ```
 
-### Deploy nfd demo
+### Deploy nscale demo
 
 Replace \<revision_id\> with the latest revision shown by the revision list command.
 
 ```sh
-nsd revision list nfddemo
-nsd revision deploy nfddemo <revision_id>
+nsd revision list nscaledemo
+nsd revision deploy nscaledemo <revision_id>
 ```
 
-### Open nfd demo in the browser
+### Open nscale demo in the browser
 
 ```sh
 open http://$(boot2docker ip):8000
@@ -75,9 +75,9 @@ open http://localhost:9000
 ### Logs
 
 ```sh
-tail -f /usr/local/var/log/nscale/server.log
-tail -f /usr/local/var/log/nscale/api.log
-tail -f /usr/local/var/log/nscale/web.log
+nsd server logs
+nsd server logs api.log
+nsd server logs web.log
 ```
 
 ### Help
