@@ -16,10 +16,11 @@ Semantic Versioning
 In the nscale deployer we follow the [semantic
 versioning](http://semver.org/), which means that:
 
-> Given a version number MAJOR.MINOR.PATCH, increment the:
-MAJOR version when you make incompatible API changes,
-MINOR version when you add functionality in a backwards-compatible manner, and
-PATCH version when you make backwards-compatible bug fixes.
+([quoted](http://semver.org/)) Given a version number MAJOR.MINOR.PATCH, increment the:
+
+  * MAJOR version when you make incompatible API changes,
+  * MINOR version when you add functionality in a backwards-compatible manner, and
+  * PATCH version when you make backwards-compatible bug fixes.
 
 nscale is currently on version 0.x: this means we might change the API and the
 commands as needed to evolve the project. If you are worried about backward compatibility,
