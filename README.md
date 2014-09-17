@@ -7,6 +7,9 @@
 
 __nscale__ is an open source project to configure, build and deploy a set of connected containers to constitute a working platform for distributed applications.
 
+Need docs? Check out our
+[wiki](https://github.com/nearform/nscale/wiki).
+
 Checkout the [workshop](https://github.com/nearform/nscale-workshop) to learn and use nscale in your projects.
 
 ## Install
