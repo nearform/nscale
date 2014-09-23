@@ -41,7 +41,7 @@ Ensure that your ~/.gitconfig settings include a username and email.
 
 ### Login
 
-By default, login uses the email defined in ~/.gitconfig and that is all that is required.
+By default, login uses the username and email defined in ~/.gitconfig and that is all that is required.
 
 ```sh
 nsd login
