@@ -43,19 +43,16 @@
       }
     },
     "analysis": {
-      "require": "nscale-boot2docker-analyzer",
+      "require": "nscale-local-analyzer",
       "specific": {
-        "name": "nscaledemo",
-        "namespace": "nscaledemo",
-        "systemId": "12341234213432143"
       }
     }
   },
   "containers": [
-    {"require": "virtualbox-container",
-     "type": "virtualbox",
+    {"require": "blank-container",
+     "type": "blank-container",
      "specific": {}},
-    {"require": "boot2docker-container",
-     "type": "boot2docker",
+    {"require": "docker-container",
+     "type": "docker",
      "specific": {"imageCachePath": "/tmp"}}]
 }
