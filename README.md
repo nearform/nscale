@@ -20,14 +20,6 @@ sudo npm install -g nscale
 
 __nscale__ depends on [nodejs](http://nodejs.org/), [npm](http://npmjs.org/) and [git](http://git-scm.com/).
 
-## Running nscale
-
-```sh
-nsd server start
-```
-
-## Getting started
-
 ### Run boot2docker
 
 Depends on [boot2docker](https://github.com/boot2docker/boot2docker)
@@ -35,6 +27,17 @@ Depends on [boot2docker](https://github.com/boot2docker/boot2docker)
 ```sh
 boot2docker up
 ```
+
+Follow the instructions given by boot2docker to set your DOCKER_HOST environment variable!
+
+## Running nscale
+
+```sh
+nsd server start
+```
+
+## Getting started
+Ensure that your ~/.gitconfig settings include a username and email.
 
 ### Login
 
