@@ -70,8 +70,11 @@ nsd revision deploy nscaledemo <revision_id>
 
 ### Open nscale demo in the browser
 
+Get the boot2docker ipaddress from a terminal type:
+  boot2docker ip
+
 ```sh
-open http://$(boot2docker ip):8000
+open http://<ipaddress>:8000
 ```
 
 ### Open web gui
