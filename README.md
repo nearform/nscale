@@ -21,9 +21,9 @@ sudo npm install -g nscale
 
 __nscale__ depends on [nodejs](http://nodejs.org/), [npm](http://npmjs.org/) and [git](http://git-scm.com/).
 
-### Run boot2docker
+### Run boot2docker on Mac OS X
 
-Depends on [boot2docker](https://github.com/boot2docker/boot2docker)
+If you are on Mac OS X, you need to start [boot2docker](https://github.com/boot2docker/boot2docker)
 
 ```sh
 boot2docker up
@@ -34,8 +34,10 @@ Follow the instructions given by boot2docker to set your DOCKER_HOST environment
 ## Running nscale
 
 ```sh
-nsd server start
+nsd server start [--sudo]
 ```
+
+You need to specify the `--sudo` flag if you need `sudo` to run `docker` commands.
 
 ## Getting started
 Ensure that your ~/.gitconfig settings include a username and email.
