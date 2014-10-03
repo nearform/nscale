@@ -9,7 +9,7 @@
     "docker",
     "scale"
   ],
-  "version": "0.3.0-pre.3",
+  "version": "0.3.0",
   "license": "Artistic License 2.0",
   "bin": {
     "nsd": "./node_modules/.bin/nsd",
