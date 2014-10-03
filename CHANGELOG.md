@@ -1,6 +1,16 @@
 Changelog
 =========
 
+v0.3.0
+------
+
+* filters added to local docker analyzer
+* nscale-system tag filter for AWS analyzer
+* system name tag added on AWS instance boot
+* improved error reporting for system commands
+* Refactor for common nscale docker analyzer
+
+
 v0.2.0
 ------
 
