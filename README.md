@@ -16,7 +16,7 @@ Checkout the [workshop](https://github.com/nearform/nscale-workshop) to learn an
 ## Install
 
 ```sh
-sudo npm install -g nscale
+[sudo] npm install -g nscale
 ```
 
 __nscale__ depends on [nodejs](http://nodejs.org/), [npm](http://npmjs.org/) and [git](http://git-scm.com/).
@@ -34,10 +34,15 @@ Follow the instructions given by boot2docker to set your DOCKER_HOST environment
 ## Running nscale
 
 ```sh
-nsd server start [--sudo]
+nsd server start
 ```
 
-You need to specify the `--sudo` flag if you need `sudo` to run `docker` commands.
+If you are running on Linux, you need to add yourself to the `docker`
+group before running any `nsd` command. To do that:
+
+```sh
+sudo usermod -G docker -a `whoami`
+```
 
 ## Getting started
 Ensure that your ~/.gitconfig settings include a username and email.
