@@ -1,6 +1,15 @@
 Changelog
 =========
 
+v0.4.0
+------
+
+* sudo arguments removed, now relies on membership of docker group
+* fixed git clone issue on hypenated urls
+* fixed hardcoded localhost in webapp
+* client code cleanup
+
+
 v0.3.0
 ------
 
