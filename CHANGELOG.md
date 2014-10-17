@@ -7,7 +7,7 @@ v0.5.0
 * nscale no longer deletes docker containers and images during build
 * introduced the new system compiler to avoid messing with system.json
 * added process containers
-* refactored of the analyzers to have generalize the docker part
+* refactored of the analyzers to generalize the docker parts
 * improved the client output during build and deploy
 * added `nsd sys link <path>` command
 * added `nsd cont buildall` command
@@ -15,6 +15,7 @@ v0.5.0
   to `<system>/workspace`
 * moved the build folders for containers repositories from `.nscale`
   to `<system>/builds`
+* improved system create, now using a better project generator
 
 v0.4.0
 ------
