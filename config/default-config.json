@@ -54,8 +54,9 @@
      "specific": {}},
     {"require": "docker-container",
      "type": "docker",
-     "specific": {"imageCachePath": "/tmp"}}
+     "specific": {"imageCachePath": "/tmp"}},
     {"require": "process-container",
      "type": "process",
-     "specific": {}]
+     "specific": {}}
+  ]
 }
