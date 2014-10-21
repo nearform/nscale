@@ -1,6 +1,12 @@
 Changelog
 =========
 
+v0.6.0
+------
+
+* Fixed `nsd cont buildall`
+* Refactoring and added tests of nscale-kernel
+
 v0.5.0
 ------
 
