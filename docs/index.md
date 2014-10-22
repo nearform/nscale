@@ -19,5 +19,6 @@ oriented production systems as straightforward as possible.
 * [Glossary][glossary]
 
 [setup-guide]: setup-guide.md
+[aws]: aws.md
 [cli-readme]: https://github.com/nearform/nscale-client
 [glossary]: glossary.md
