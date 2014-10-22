@@ -79,10 +79,11 @@ This should show the help output.
 
 # Next Steps
 
-* [Development guide](development-guide)
+* [Development guide][development-guide]
 
 [nodejs]: http://nodejs.org
 [git]: http://git-scm.org
 [generate-ssh-keys]: https://help.github.com/articles/generating-ssh-keys/
 [What is Docker]: https://www.docker.com/whatisdocker/
 [docker-install]: https://docs.docker.com/installation/
+[development-guide]: development-guide.md
