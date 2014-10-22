@@ -71,7 +71,7 @@ nscaledemo                        e1144711-47bb-5931-9117-94f01dd20f6f
 
 # Listing containers
 
-Our cloned system has two containers (see [Containers][]), let's list
+Our cloned system has two containers (see [containers][container]), let's list
 them: 
 
 ```
@@ -149,8 +149,5 @@ your first nscale system!
 
 
 [setup-guide]: setup-guide.md
-
-[Containers]: Concept-Containers
-[Microservices]: Concept-Microservices
-
+[container]: glossary.md#container
 [web-app]:https://github.com/nearform/nscaledemoweb/blob/master/index.js
