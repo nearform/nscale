@@ -47,7 +47,7 @@ that provide the benefits of running virtual machines but at much lower resource
 cost (see [What is Docker][] for more).
 
 If you don't have Docker installed, install it following the [instructions](docker-install)
-for your operating system.
+for your operating system and make sure to start it afterwards.
 
 ### Build tools
 `nscale` makes use of compiled addons which you will need build tools to

@@ -13,8 +13,7 @@ to prepare your system.
 * `nscale`
 
 ## Starting Docker
-Make sure that Docker is started. Follow the [instructions][docker-install]
-for your operating system.
+Make sure that Docker is started.
 
 If you're using `boot2docker`, upon starting it may instruct us to run a command,
 something like:
