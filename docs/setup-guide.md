@@ -15,6 +15,10 @@ If the command isn't found or the version is less than 0.10.x
 then we'll need install or upgrade Node. To do that, head over to
 [Node.js homepage][nodejs] and install the package for your operating system.
 
+If you wish to install Node using a package manager, follow
+[those instructions](https://github.com/joyent/node/wiki/installing-node.js-via-package-manager)
+instead.
+
 ### Git
 
 `nscale` also depends on Git, we can check whether this is installed
@@ -41,6 +45,13 @@ cost (see [What is Docker][] for more).
 
 If you don't have Docker installed, install it following the [instructions](docker-install)
 for your operating system.
+
+### Build tools
+`nscale` makes use of compiled addons which you will need build tools to
+compile.
+
+On OS X you will need to install Xcode with command line tools. On Linux, your
+distribution should provide a package with them.
 
 ## `nscale`
 
