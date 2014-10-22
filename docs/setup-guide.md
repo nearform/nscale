@@ -37,6 +37,9 @@ git config --global user.name "<user name>"
 git config --global user.email "<email>"
 ```
 
+If you want to use GitHub, make sure that your account has the right key added.
+Follow [those instructions][generate-ssh-keys] to generate and add a new key.
+
 ### Docker
 
 Docker provides containers, that can be thought of as isolated environments
@@ -80,5 +83,6 @@ This should show the help output.
 
 [nodejs]: http://nodejs.org
 [git]: http://git-scm.org
+[generate-ssh-keys]: https://help.github.com/articles/generating-ssh-keys/
 [What is Docker]: https://www.docker.com/whatisdocker/
 [docker-install]: https://docs.docker.com/installation/
