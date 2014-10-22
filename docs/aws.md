@@ -27,7 +27,7 @@ ssh -i <keysfile.pem> ubuntu@<public ip>
 
 ### Upgrading Node
 
-If Node is out of date (check `node --version` against <nodejs.org>),
+If Node is out of date (check `node --version` against [nodejs.org][nodejs]),
 follow the [setup guide][setup-guide] on upgrading.
 
 ### GitHub
@@ -50,5 +50,6 @@ Your AMI should now be setup! Follow the [development guide][development-guide]
 to get started with using `nscale` for deployment.
 
 [AWS-signup]: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc1=h_ct
+[nodejs]: http://nodejs.org
 [setup-guide]: setup-guide.md
 [development-guide]: development-guide.md
