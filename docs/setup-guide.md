@@ -75,7 +75,9 @@ We can test that the install was successful by attempting to run the executable:
 nsd
 ```
 
-This should show the help output. 
+This should show the help output.
+
+Next, run `nsd login` to make `nscale` pick up your git config.
 
 # Next Steps
 
