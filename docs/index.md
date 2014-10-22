@@ -8,6 +8,7 @@ oriented production systems as straightforward as possible.
 
 * [Local setup][setup-guide]
 * [AWS setup][aws]
+* [Vagrant setup][vagrant]
 
 ## Quick Start
 
@@ -21,5 +22,6 @@ oriented production systems as straightforward as possible.
 [setup-guide]: setup-guide.md
 [development-guide]: development-guide.md
 [aws]: aws.md
+[vagrant]: vagrant.md
 [cli-readme]: https://github.com/nearform/nscale-client
 [glossary]: glossary.md
