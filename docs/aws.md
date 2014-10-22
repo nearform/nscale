@@ -52,4 +52,5 @@ to get started with using `nscale` for deployment.
 [AWS-signup]: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc1=h_ct
 [nodejs]: http://nodejs.org
 [setup-guide]: setup-guide.md
+[generate-ssh-keys]: https://help.github.com/articles/generating-ssh-keys/
 [development-guide]: development-guide.md
