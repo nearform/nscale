@@ -28,7 +28,7 @@ ssh -i <keysfile.pem> ubuntu@<public ip>
 ### Upgrading Node
 
 If Node is out of date (check `node --version` against <nodejs.org>),
-follow the [setup guide](setup-guide) on upgrading.
+follow the [setup guide][setup-guide] on upgrading.
 
 ### GitHub
 
@@ -41,14 +41,14 @@ git config --global user.email "<email>"
 ```
 
 If you're planning on using GitHub, make sure to generate an SSH key following
-[GitHub's instructions](generate-ssh-keys). (*Don't* copy over your personal key
+[GitHub's instructions][generate-ssh-keys]. (*Don't* copy over your personal key
 for security reasons.)
 
 # Next Steps
 
-Your AMI should now be setup! Follow the [development guide](development-guide)
+Your AMI should now be setup! Follow the [development guide][development-guide]
 to get started with using `nscale` for deployment.
 
 [AWS-signup]: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc1=h_ct
-[setup-guide]: setup-guide
-[development-guide]: development-guide
+[setup-guide]: setup-guide.md
+[development-guide]: development-guide.md

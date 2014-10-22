@@ -18,6 +18,6 @@ oriented production systems as straightforward as possible.
 * [CLI Readme][cli-readme]
 * [Glossary][glossary]
 
-[setup-guide]: setup-guide
+[setup-guide]: setup-guide.md
 [cli-readme]: https://github.com/nearform/nscale-client
-[glossary]: glossary
+[glossary]: glossary.md

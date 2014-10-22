@@ -148,9 +148,7 @@ You should see "Hello World" being output. If so, congrats, you just deployed
 your first nscale system!
 
 
-# Next Steps
-
-[setup-guide]: setup-guide
+[setup-guide]: setup-guide.md
 
 [Containers]: Concept-Containers
 [Microservices]: Concept-Microservices
