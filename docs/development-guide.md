@@ -13,7 +13,7 @@ to prepare your system.
 * `nscale`
 
 ## Starting Docker
-Make sure that Docker is started. Follow the [instructions](docker-install)
+Make sure that Docker is started. Follow the [instructions][docker-install]
 for your operating system.
 
 If you're using `boot2docker`, upon starting it may instruct us to run a command,
@@ -150,4 +150,4 @@ your first nscale system!
 
 [setup-guide]: setup-guide.md
 [container]: glossary.md#container
-[web-app]:https://github.com/nearform/nscaledemoweb/blob/master/index.js
+[web-app]: https://github.com/nearform/nscaledemoweb/blob/master/index.js
