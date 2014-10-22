@@ -9,15 +9,11 @@ having a single focused purpose, designed to communicate
 with other microservices via a well defined interface to 
 provide business value. 
 
-* [Microservices][]
-
 # container
 
 An isolated host environment that can contain other containers and/or 
 microservices. May be a virtual machine, a docker container or some
 other process that provides an isolated OS-like system.
-
-* [Containers][]
 
 # system 
 
@@ -46,8 +42,3 @@ must be available for the `nscale-client` (the `nsd` executable) to function.
 * <http://github.com/nearform/nscale-kernel>
 * <http://github.com/nearform/nscale-protocol>
 * <http://github.com/nearform/nscale-api>
-* [Kernel Readme]
-
-
-[Microservices]: Concept-Microservices
-[Containers]: Concept-Containers
