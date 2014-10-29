@@ -1,11 +1,7 @@
 
 ![nscale](https://raw.githubusercontent.com/nearform/nscale/67447192084bd398b94a58ef93451ab18a3bd27a/docs/images/logo.png)
 
----------------
-
 [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/nearform/nscale?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
-<img align="right" width="150" src="https://raw.githubusercontent.com/nearform/nscale/master/docs/images/logo.png">
 
 > A toolkit for application deployments and container management
 
