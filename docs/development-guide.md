@@ -94,7 +94,9 @@ web                  docker          web                                        
 
 # Building a container
 
-Our `root` is a blank container, TODO.
+Our `root` is a `blank-container`. The topology of containers is a tree and
+the root of it points to the target we're deploying to, in this case a Docker
+host.
 
 The second container (`web`) is a Docker container, this an isolated OS-like
 environment that can be run on a host system (in this case our `Machine`).
