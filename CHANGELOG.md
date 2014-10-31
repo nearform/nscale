@@ -1,6 +1,21 @@
 Changelog
 =========
 
+v0.7.1
+------
+
+* Support for docker over TLS
+* Support for boot2docker 1.3.0
+
+v0.7.0
+------
+
+* Improved dockerBuilder
+* Added docker-registry-container to use stock images from Docker Hub
+* Updated the workshop to avoid the 'missing libssl-dev' issue
+  https://github.com/nearform/nscale-workshop/issues/16
+* Moved the documentation from the wiki to the repository
+
 v0.6.0
 ------
 
