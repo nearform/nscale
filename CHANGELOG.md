@@ -1,6 +1,12 @@
 Changelog
 =========
 
+v0.8.0
+------
+* Improved support for AWS
+* AWS plugins now compatible with compilation process
+* Compiler support for addtitional attirbutes in topology section
+
 v0.7.1
 ------
 
