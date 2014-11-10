@@ -55,9 +55,6 @@
     {"require": "docker-container",
      "type": "docker",
      "specific": {"imageCachePath": "/tmp"}},
-    {"require": "docker-registry-container",
-     "type": "docker-registry",
-     "specific": {}},
     {"require": "process-container",
      "type": "process",
      "specific": {}}
