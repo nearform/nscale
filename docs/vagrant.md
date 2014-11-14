@@ -13,7 +13,7 @@
 Replace \<name\> and \<email\> with your git username and email.
 
 ```
-vagrant init 3scale/docker
+vagrant init nscale/docker
 vagrant up
 vagrant ssh
 sudo apt-get update
