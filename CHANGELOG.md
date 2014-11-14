@@ -1,8 +1,23 @@
 Changelog
 =========
 
+v0.9.0
+------
+
+* Check javascript validity with JsHint before compilation
+* Improved error reporting for the compiler
+* Check on the logical validity of a system.js configuration
+* Support multiple root elements in the system.js
+* Added a direct environment for bare metal/ssh-only vms
+* Reduced disk space for image exports with gzip
+* Added a '-v' flag that display nscale version
+* Removed docker-registry-container and merged it with docker-container
+* Added Google Analytics opt-in usage tracking
+* Improved support for AWS
+
 v0.8.0
 ------
+
 * Improved support for AWS
 * AWS plugins now compatible with compilation process
 * Compiler support for addtitional attirbutes in topology section
