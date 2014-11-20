@@ -2,33 +2,19 @@
   "kernel": {
     "port": "8010",
     "systemsRoot": "$NSCALE_ROOT/data/systems",
-    "buildRoot": "$NSCALE_ROOT/data/build",
-    "targetRoot": "$NSCALE_ROOT/data/targets"
+    "user": "YOUR_USERNAME",
+    "identityFile": "YOUR_SSH_KEY_FILE",
+    "region": "AWS_ONLY_YOUR_AWS_REGION",
+    "accessKeyId": "AWS_ONLY_YOUR_AWS_ACCESS_KEY",
+    "secretAccessKey": "AWS_ONLY_YOUR_AWS_SECRET_ACCESS_KEY"
   },
   "api": {
-    "port": 3000,
-    "sdkhost": "localhost",
-    "sdkport": "3223",
-    "https": false,
     "cors": {
       "allowedDomains": ["http://localhost:9000"]
     },
-    "github": {
-      "scope": ["repo", "user:email"],
-      "clientID": "CLIENT_ID",
-      "clientSecret": "SECRET",
-      "urlhost": "http://localhost:3000",
-      "redirect": {
-        "success": "http://localhost:9000/home",
-        "failure": "http://localhost:9000"
-      }
-    }
   },
   "web": {
-    "ip": "0.0.0.0",
-    "port": 9000,
     "apiserver": "http://localhost:3000",
-    "apibase": "/api/1.0"
   },
   "modules": {
     "protocol": {
