@@ -1,6 +1,17 @@
 Changelog
 =========
 
+v0.10.0
+------
+
+* full AWS cold boot support
+* AWS configuration cleaned up
+* support for deployment on bare metal 
+* preliminary supporto for DigitalOcean
+* improved kernel debug logging
+* corrected default configuration in web and api
+* removd unused code from nscale-util
+
 v0.9.0
 ------
 
