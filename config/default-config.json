@@ -9,12 +9,8 @@
     "secretAccessKey": "AWS_ONLY_YOUR_AWS_SECRET_ACCESS_KEY"
   },
   "api": {
-    "cors": {
-      "allowedDomains": ["http://localhost:9000"]
-    },
   },
   "web": {
-    "apiserver": "http://localhost:3000",
   },
   "modules": {
     "protocol": {
