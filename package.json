@@ -10,7 +10,7 @@
     "docker",
     "scale"
   ],
-  "version": "0.10.0",
+  "version": "0.10.1",
   "license": "Artistic License 2.0",
   "bin": {
     "nsd": "./node_modules/.bin/nsd",
@@ -32,13 +32,14 @@
   "dependencies": {
     "mkdirp": "^0.5.0",
     "nscale-api": "~0.10.0",
-    "nscale-kernel": "~0.10.0",
-    "nscale-client": "~0.10.0",
+    "nscale-kernel": "~0.10.1-pre.1",
+    "nscale-client": "~0.10.1",
     "nscale-web": "~0.10.0",
     "osenv": "^0.1.0"
   },
   "devDependencies": {
     "jsonlint": "^1.6.2",
+    "lodash": "^2.4.1",
     "pre-commit": "0.0.9"
   },
   "scripts": {

@@ -1,12 +1,25 @@
 Changelog
 =========
 
+v0.10.1
+-------
+
+* fixed .gitignore not created together with new systems
+  https://github.com/nearform/nscale/issues/32
+* fixed prompt partially invisible on solarized dark
+  https://github.com/nearform/nscale/issues/33
+* fixed compiling system with non-js fle in defitions
+  https://github.com/nearform/nscale/issues/34
+* new AWS tutorial, see
+  [ex8](https://github.com/nearform/nscale-workshop/blob/master/ex8.md)
+
+
 v0.10.0
 ------
 
 * full AWS cold boot support
 * AWS configuration cleaned up
-* support for deployment on bare metal 
+* support for deployment on bare metal
 * preliminary supporto for DigitalOcean
 * improved kernel debug logging
 * corrected default configuration in web and api

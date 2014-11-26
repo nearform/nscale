@@ -3,7 +3,7 @@
  * release script for nscale
  */
 /*
- * usage:
+ * usage: node release FOLDER
  * use changessh to determine changed modules
  * comment out modules that you do not want to release from the toProcess array below
  *
@@ -16,11 +16,18 @@
 
 'use strict';
 
-var versionNo = '0.10.0';
+var versionNo = '0.10.1';
 var pre = '-pre.1';
 
 var fs = require('fs');
 var _ = require('lodash');
+
+var root = process.argv[2];
+
+if (!root) {
+  console.log('Usage: release FOLDER');
+  process.exit(1);
+}
 
 
 var toProcess = [
@@ -57,14 +64,15 @@ var applyPre = [
 
 var loadDeps = function(cb) {
   var deps = {};
-  fs.readdir(__dirname, function (err, list) {
+  fs.readdir(root, function (err, list) {
     if (err) { return cb(err); }
 
     list.forEach(function(entry) {
-      var stat = fs.statSync(entry);
+      var folder = root + '/' + entry;
+      var stat = fs.statSync(folder);
       if (stat.isDirectory()) {
-        if (fs.existsSync(entry + '/package.json')) {
-          var pkg = _.cloneDeep(require(__dirname + '/' + entry + '/package.json'));
+        if (fs.existsSync(folder + '/package.json')) {
+          var pkg = _.cloneDeep(require(folder + '/package.json'));
           if (_.find(toProcess, function(proc) { return proc === entry; })) {
             deps[entry] = pkg.dependencies;
           }
@@ -97,7 +105,7 @@ var pruneDeps = function(deps) {
 
 var bumpCommitPublish = function(deps) {
   _.each(_.keys(deps), function(dep) {
-    var pkg = _.cloneDeep(require(__dirname + '/' + dep + '/package.json'));
+    var pkg = _.cloneDeep(require(root + '/' + dep + '/package.json'));
     if (!_.find(applyPre, function(ap) { return ap === dep; })) {
       pkg.version = versionNo;
     }
@@ -118,7 +126,7 @@ var bumpCommitPublish = function(deps) {
         }
       }
     });
-    fs.writeFileSync(__dirname + '/' + dep + '/package.json', JSON.stringify(pkg, null, 2), 'utf8');
+    fs.writeFileSync(root + '/' + dep + '/package.json', JSON.stringify(pkg, null, 2), 'utf8');
   });
 };
 
