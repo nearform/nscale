@@ -1,6 +1,14 @@
 Changelog
 =========
 
+v0.11.0
+-------
+
+* Integrated
+  [docker-registry-server](http://npm.im/docker-registry-server),
+  so that builds and pulls requires less time as it deduplicates
+* Analysis refactoring to complete faster
+
 v0.10.1
 -------
 
