@@ -16,7 +16,7 @@
 
 'use strict';
 
-var versionNo = '0.10.1';
+var versionNo = '0.11.0';
 var pre = '-pre.1';
 
 var fs = require('fs');
@@ -72,7 +72,7 @@ var loadDeps = function(cb) {
       var stat = fs.statSync(folder);
       if (stat.isDirectory()) {
         if (fs.existsSync(folder + '/package.json')) {
-          var pkg = _.cloneDeep(require(folder + '/package.json'));
+          var pkg = _.cloneDeep(require(process.cwd() + '/' + folder + '/package.json'));
           if (_.find(toProcess, function(proc) { return proc === entry; })) {
             deps[entry] = pkg.dependencies;
           }
@@ -105,7 +105,7 @@ var pruneDeps = function(deps) {
 
 var bumpCommitPublish = function(deps) {
   _.each(_.keys(deps), function(dep) {
-    var pkg = _.cloneDeep(require(root + '/' + dep + '/package.json'));
+    var pkg = _.cloneDeep(require(process.cwd() + '/' + root + '/' + dep + '/package.json'));
     if (!_.find(applyPre, function(ap) { return ap === dep; })) {
       pkg.version = versionNo;
     }
