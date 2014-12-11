@@ -1,6 +1,13 @@
 Changelog
 =========
 
+v0.12.0
+-------
+
+* Handle HTTP git urls inside service definitions
+* Protect against missing systems in the Kernel API
+* Better output on the client for missing systems
+
 v0.11.0
 -------
 
