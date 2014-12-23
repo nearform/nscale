@@ -8,6 +8,7 @@ v0.13.0
 * new [development workflow](https://github.com/nearform/nscale-workshop/blob/master/development-workflow.md)
   tutorial.
 * Do not allow '-' in the system names [#48](https://github.com/nearform/nscale/issues/48).
+* Support custom branch in `repositoryUrl`.
 
 v0.12.0
 -------
