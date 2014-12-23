@@ -1,7 +1,7 @@
 {
   "kernel": {
     "port": "8010",
-    "systemsRoot": "$NSCALE_ROOT/data/systems",
+    "root": "$NSCALE_ROOT",
     "user": "YOUR_USERNAME",
     "identityFile": "YOUR_SSH_KEY_FILE",
     "region": "AWS_ONLY_YOUR_AWS_REGION",
