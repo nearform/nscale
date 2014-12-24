@@ -68,7 +68,15 @@ nsd container build nscaledemo web
 
 ### Deploy nscale demo
 
-Replace \<revision_id\> with the latest revision shown by the revision list command.
+
+Deploy the latest revision:
+
+```sh
+nsd revision deploy nscaledemo latest
+```
+
+or deploy any revision, by replacing \<revision_id\>
+with the a revision shown by the revision list command.
 
 ```sh
 nsd revision list nscaledemo
