@@ -1,4 +1,5 @@
 git clone git@github.com:nearform/aws-ami-container.git
+git clone git@github.com:mcollina/aws-r53-container.git
 git clone git@github.com:nearform/aws-elb-container.git
 git clone git@github.com:nearform/docker-container.git
 git clone git@github.com:nearform/nscale-docker-analyzer.git
@@ -18,3 +19,7 @@ git clone git@github.com:nearform/nscale-api.git
 git clone git@github.com:nearform/process-container.git
 git clone git@github.com:nearform/nscale-compiler.git
 git clone git@github.com:nearform/aws-sg-container.git
+git clone git@github.com:nearform/nscale-docker-ssh-analyzer.git
+git clone git@github.com:nearform/nscale-direct-analyzer.git
+git clone git@github.com:mcollina/remote-forwarder.git
+git clone git@github.com:mcollina/nscale-chaos-monkey.git
