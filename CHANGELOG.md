@@ -1,6 +1,19 @@
 Changelog
 =========
 
+v0.14.0
+-------
+
+* Removed commit on build.
+* Set the git commit of the target container in the compiled JSON.
+* Swapped the old environment to new custom targets, no more
+  automatic mapping. So now you can have 'development', 'staging' and
+  'production', or just 'monkey'.
+* deploy, analyze, ... a named target.
+* nscale-kernel cleanup.
+* containerDefinitions ids now contains the commit SHA.
+* container ids now contains the commit SHA.
+
 v0.13.0
 -------
 
