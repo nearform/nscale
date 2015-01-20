@@ -13,6 +13,7 @@ v0.14.0
 * nscale-kernel cleanup.
 * containerDefinitions ids now contains the commit SHA.
 * container ids now contains the commit SHA.
+* moved the timeline out of system repo.
 
 v0.13.0
 -------
