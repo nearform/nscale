@@ -14,6 +14,10 @@ v0.14.0
 * containerDefinitions ids now contains the commit SHA.
 * container ids now contains the commit SHA.
 * moved the timeline out of system repo.
+* Removed alias in the services definition, you should rename
+  `container` with `blank-container`, and `process` with `docker`.
+  In practice [this file](https://github.com/nearform/nscale-compiler/blob/6ad5fb828f57ff68b7dc6f5e6a27536526a67969/map/mappings.js#L1-L24)
+  is gone.
 
 v0.13.0
 -------
