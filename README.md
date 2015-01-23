@@ -33,11 +33,11 @@ Follow the instructions given by boot2docker to set your DOCKER_HOST environment
 ## Running nscale
 
 ```sh
-nsd server start
+nscale server start
 ```
 
 If you are running on Linux, you need to add yourself to the `docker`
-group before running any `nsd` command. To do that:
+group before running any `nscale` command. To do that:
 
 ```sh
 sudo usermod -G docker -a `whoami`
@@ -51,19 +51,19 @@ Ensure that your ~/.gitconfig settings include a username and email.
 By default, login uses the username and email defined in ~/.gitconfig and that is all that is required.
 
 ```sh
-nsd login
+nscale login
 ```
 
 ### Clone nscale demo
 
 ```sh
-nsd system clone git@github.com:nearform/nscaledemo.git
+nscale system clone git@github.com:nearform/nscaledemo.git
 ```
 
-### Build web container
+### Build the containers
 
 ```sh
-nsd container build nscaledemo web
+nscale container build nscaledemo web
 ```
 
 ### Deploy nscale demo
@@ -72,15 +72,15 @@ nsd container build nscaledemo web
 Deploy the latest revision:
 
 ```sh
-nsd revision deploy nscaledemo latest
+nscale revision deploy nscaledemo latest
 ```
 
 or deploy any revision, by replacing \<revision_id\>
 with the a revision shown by the revision list command.
 
 ```sh
-nsd revision list nscaledemo
-nsd revision deploy nscaledemo <revision_id>
+nscale revision list nscaledemo
+nscale revision deploy nscaledemo <revision_id>
 ```
 
 ### Open nscale demo in the browser
@@ -101,19 +101,19 @@ open http://localhost:9000
 ### Logs
 
 ```sh
-nsd server logs
-nsd server logs api.log
-nsd server logs web.log
+nscale server logs
+nscale server logs api.log
+nscale server logs web.log
 ```
 
 ### Help
 
 ```sh
-nsd help
+nscale help
 ```
 
 ## License
 
-Copyright (c) 2014 Nearform and other contributors
+Copyright (c) 2014-2015 Nearform and other contributors
 
 Licensed under the Artistic License 2.0
