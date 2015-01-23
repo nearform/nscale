@@ -18,6 +18,7 @@ v0.14.0
   `container` with `blank-container`, and `process` with `docker`.
   In practice [this file](https://github.com/nearform/nscale-compiler/blob/6ad5fb828f57ff68b7dc6f5e6a27536526a67969/map/mappings.js#L1-L24)
   is gone.
+* Removed commands: system clone, remote add, system put, system sync
 
 v0.13.0
 -------
