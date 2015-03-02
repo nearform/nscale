@@ -23,7 +23,7 @@ Typically an nscale deployment consists of a management server running nscale an
 - Perform immutable deployments
 - Perform fast safe rollback to known good state
 - Perform homeostatic monitoring and updates
-- Perform alogrithmic deployments
+- Perform algorithmic deployments
 
 nscale can run in a local development configuration on a single system or as a management system for multipe target servers.
 
@@ -31,6 +31,7 @@ nscale can run in a local development configuration on a single system or as a m
 ![Local Mode](docs/images/localmode.png)
 
 In a development configuration, the nscale server and running containers live on the same system. This is a great way to get started with nscale or to use it for local development and testing.
+As an _experimental feature_, nscale supports running containers as processes, this mode is called 'process-container', and it supports automatic reloading if anything changes.
 
 ### Production configuration
 ![Local Mode](docs/images/remotemod.png)
@@ -237,8 +238,10 @@ You should be able to open a browser and point it to the boot2docker ip address 
 boot2docker ip
 ```
 
+So, you can run:
+
 ```sh
-open http://<ipaddress>:8000
+open http://`boot2docker ip`:8000
 ```
 
 ## Next steps
@@ -246,6 +249,6 @@ Full documentation for nscale is available on the nscale document repository [he
 
 ## License
 
-Copyright (c) 2014 Nearform and other contributors
+Copyright (c) 2014-2015 Nearform and other contributors
 
 Licensed under the Artistic License 2.0
