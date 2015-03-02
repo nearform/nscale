@@ -77,7 +77,7 @@ We understand that there exist other operating systems, however at this time we 
 
 ### Install node
 
-nscale is built using node.js. To install node, go to the [download page](http://www.nodejs.org) and install the appropritae binary for your system.
+nscale is built using node.js. To install node, go to the [download page](http://www.nodejs.org) and install the appropritae binary for your system. 
 
 ### Install git
 nscale uses git as a backing store for system configuration and versioning. git can be installed using the package manager on your system of choice (i.e. homebrew on osx, apt-get on ubuntu...)
@@ -216,13 +216,19 @@ nscale revision list nscaledemo
 This command shows a list of the revisions on this system repository. You will see a number of commits from the repository that was originally cloned plus a fresh commit representing the compile that was executed a few steps above. Go ahead and run the system by executing:
 
 ```sh
-nscale revision preview nscaledemo latest local
+nscale revision deploy nscaledemo latest development
 ```
 
 nscale will start the demo container. You can check that all is well by running:
 
 ```sh
-nscale system check nscaledemo local
+nscale system check nscaledemo development
+```
+
+And check that the web container is running using:
+
+```sh
+docker ps
 ```
 
 You should be able to open a browser and point it to the boot2docker ip address (mac os X) or localhost (linux) port 8000. This should display the string 'hello world'. You can get the boot2docker ip address with the following command:
@@ -236,7 +242,7 @@ open http://<ipaddress>:8000
 ```
 
 ## Next steps
-Full documentation for nscale is avaiable on the nscale document repository at []
+Full documentation for nscale is available on the nscale document repository [here](https://github.com/nearform/nscale-docs).
 
 ## License
 
