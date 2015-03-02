@@ -1,4 +1,3 @@
-
 ![nscale](https://raw.githubusercontent.com/nearform/nscale/67447192084bd398b94a58ef93451ab18a3bd27a/docs/images/logo.png)
 
 [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/nearform/nscale?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
@@ -47,6 +46,10 @@ These quickstart instructions will get you up and running with nscale in a local
 If you are on Mac OS X, you need to install and run [boot2docker](https://github.com/boot2docker/boot2docker). Once you have installed boot2docker start it using:
 
 ```sh
+boot2docker init
+```
+
+```sh
 boot2docker up
 ```
 
@@ -90,7 +93,7 @@ git config --global user.name "<user name>"
 git config --global user.email "<email>"
 ```
 
-You will need to configure ssh access to github. See [this guide](asdf) to get ssh keys setup.
+You will need to configure ssh access to github. See [this guide](https://help.github.com/articles/generating-ssh-keys/) to get ssh keys setup.
 
 ### Install nscale
 nscale can be installed using npm. To install the latest version run:
@@ -118,7 +121,7 @@ docker ps
 
 Note that this command should run __WITHOUT NEEDING SUDO__.
 
-__IMPORTANT!!! If the above checks do not run cleanly, please go back and check your configuration. Don't even think about starting nscale until this is corrected. Seriously... we mean it - you'll make us very sad otherwise :(__
+__IMPORTANT!!! If the above checks do not run cleanly, please go back and check your configuration. Don't even think about starting nscale until this is corrected. Seriously... we mean it - We'll be very sad otherwise :(__
 
 ### Running nscale
 Now that everything is configured you are good to start nscale:
@@ -133,73 +136,107 @@ Will kick off the nscale deamon. We now need to tell nscale about our git config
 nscale login
 ```
 
-### Run a demo application
-You should now be able to clone the nscale demo application. To do this cd into a new empty working directory and run the following command:
-
-```sh
-nscale system clone git@github.com:nearform/nscaledemo.git
-```
-
-You can validate that the clone went OK by running
+Finally lets check that nscale is good to go by running:
 
 ```sh
 nscale system list
 ```
 
-Which should show you the system configuration that you have just cloned.
+You should see output similar to the following
+```sh
+Name                           Id
+```
+
+### Run a demo application
+You should now be able to clone and run a small demo application. To do this cd into a new empty working directory and clone the repository:
+
+```sh
+mkdir ~/work; cd ~/work
+```
+
+```sh
+git clone git@github.com:nearform/nscaledemo.git
+```
+
+This will create a sub directory named nscaledemo. You now need to link this repository into nscale. By running:
+
+```sh
+nscale system link nscaledemo
+```
+
+Check that the system was linked in correctly by running a system list command again. Which should now contian the linked system:
+
+```sh
+nscale system list
+```
+
+```sh
+Name                           Id
+nscaledemo                     e1144711-47bb-5931-9117-94f01dd20f6f
+```
 
 
-### Build web container
+#### Compile the system definition
+In order to work with the demo system we first need to run a compile.
+
+```sh
+nscale system compile nscaledemo
+```
+
+Once the compile has completed you should be able to list the available containers in the system. Run:
+
+```sh
+nscale container list nscaledemo
+```
+
+You should see the following output
+
+```sh
+Name                 Type                 Id
+root                 container            85d99b2c-06d0-5485-9501-4d4ed429799c
+web                  process              web$2f9f7ddadc8bead84de4a74665085d362b1..
+```
+
+#### Compile the demo container
+Next you will need to compile the example container. To do this run:
 
 ```sh
 nscale container build nscaledemo web
 ```
 
-### Deploy nscale demo
+This command will create a docker container ready for nscale to start.
 
-
-Deploy the latest revision:
-
-```sh
-nscale revision deploy nscaledemo latest
-```
-
-or deploy any revision, by replacing \<revision_id\>
-with the a revision shown by the revision list command.
+#### Run the demo
+Before we run the system, take a quick look at the revsion list:
 
 ```sh
 nscale revision list nscaledemo
-nscale revision deploy nscaledemo <revision_id>
 ```
 
-### Open nscale demo in the browser
+This command shows a list of the revisions on this system repository. You will see a number of commits from the repository that was originally cloned plus a fresh commit representing the compile that was executed a few steps above. Go ahead and run the system by executing:
 
-Get the boot2docker ipaddress from a terminal type:
-  boot2docker ip
+```sh
+nscale revision preview nscaledemo latest local
+```
+
+nscale will start the demo container. You can check that all is well by running:
+
+```sh
+nscale system check nscaledemo local
+```
+
+You should be able to open a browser and point it to the boot2docker ip address (mac os X) or localhost (linux) port 8000. This should display the string 'hello world'. You can get the boot2docker ip address with the following command:
+
+```sh
+boot2docker ip
+```
 
 ```sh
 open http://<ipaddress>:8000
 ```
 
-### Open web gui
-
-```sh
-open http://localhost:9000
-```
-
-### Logs
-
-```sh
-nsd server logs
-nsd server logs api.log
-nsd server logs web.log
-```
-
-### Help
-
-```sh
-nsd help
-```
+## Next steps
+Full documentation for nscale is avaiable on the nscale document repository at []
 
 ## License
 
