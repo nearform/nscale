@@ -1,7 +1,12 @@
 {
   "name": "nscale",
-  "version": "0.14.0",
+  "version": "0.14.1",
   "dependencies": {
+    "lodash": {
+      "version": "2.4.1",
+      "from": "lodash@^2.4.1",
+      "resolved": "https://registry.npmjs.org/lodash/-/lodash-2.4.1.tgz"
+    },
     "mkdirp": {
       "version": "0.5.0",
       "from": "mkdirp@^0.5.0",
