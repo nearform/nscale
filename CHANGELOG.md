@@ -1,6 +1,12 @@
 Changelog
 =========
 
+v0.15.0
+-------
+
+* System-specific config file (@mcollina)
+* System-specific AWS credentials (@McDonnellDean)
+
 v0.14.0
 -------
 
