@@ -6,6 +6,8 @@ v0.15.0
 
 * System-specific config file (@mcollina)
 * System-specific AWS credentials (@McDonnellDean)
+* Correctly link and unlink AWS AMI instances on fix
+  reported by @darragh-hayes #72 (@mcollina).
 
 v0.14.0
 -------
