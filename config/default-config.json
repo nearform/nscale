@@ -1,12 +1,6 @@
 {
   "kernel": {
-    "port": "8010",
-    "root": "$NSCALE_ROOT",
-    "user": "YOUR_USERNAME",
-    "identityFile": "YOUR_SSH_KEY_FILE",
-    "region": "AWS_ONLY_YOUR_AWS_REGION",
-    "accessKeyId": "AWS_ONLY_YOUR_AWS_ACCESS_KEY",
-    "secretAccessKey": "AWS_ONLY_YOUR_AWS_SECRET_ACCESS_KEY"
+    "root": "$NSCALE_ROOT"
   },
   "api": {
   },
@@ -23,22 +17,7 @@
       "specific": {
         "credentialsPath": "$NSCALE_ROOT/data"
       }
-    },
-    "analysis": {
-      "require": "nscale-local-analyzer",
-      "specific": {
-      }
     }
-  },
-  "containers": [
-    {"require": "blank-container",
-     "type": "blank-container",
-     "specific": {}},
-    {"require": "docker-container",
-     "type": "docker",
-     "specific": {"imageCachePath": "/tmp"}},
-    {"require": "process-container",
-     "type": "process",
-     "specific": {}}
-  ]
+  }
 }
+
