@@ -12,6 +12,7 @@ v0.15.0
 * Avoid pulling on compile via config (@pelger)
 * Disambiguate correctly between systems with similar names if
   cwd is the system folder (@mcollina)
+* Temporarily removed nscale-api and nscale-web
 
 v0.14.0
 -------
