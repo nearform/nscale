@@ -1,6 +1,19 @@
 Changelog
 =========
 
+v0.15.0
+-------
+
+* System-specific config file and AWS support (@mcollina)
+* System-specific AWS credentials (@McDonnellDean)
+* Correctly link and unlink AWS AMI instances on fix
+  reported by @darragh-hayes #72 (@mcollina)
+* Support local .jshintrc for systems (@darragh-hayes)
+* Avoid pulling on compile via config (@pelger)
+* Disambiguate correctly between systems with similar names if
+  cwd is the system folder (@mcollina)
+* Temporarily removed nscale-api and nscale-web
+
 v0.14.0
 -------
 
