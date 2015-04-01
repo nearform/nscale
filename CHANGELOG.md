@@ -1,6 +1,21 @@
 Changelog
 =========
 
+v0.15.3
+-------
+
+* Resolved reliability issues with process containers
+
+v0.15.2
+-------
+
+* Fixed `ignored` property in the process containers
+
+v0.15.1
+-------
+
+* Bad shrinkwrap resolved
+
 v0.15.0
 -------
 
