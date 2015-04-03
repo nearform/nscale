@@ -1,6 +1,12 @@
 Changelog
 =========
 
+v0.16.0
+-------
+
+* AWS autoscaling support (@mcollina @Nss)
+* Deployment queue, do one deployment at a time (@Nss)
+
 v0.15.3
 -------
 
