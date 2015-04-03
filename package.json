@@ -10,7 +10,7 @@
     "docker",
     "scale"
   ],
-  "version": "0.16.0-pre1",
+  "version": "0.16.0-pre2",
   "license": "Artistic License 2.0",
   "bin": {
     "nscale": "./node_modules/.bin/nscale",
