@@ -1,6 +1,6 @@
 {
   "kernel": {
-    "port": "8010",
+    "port": "3223",
     "root": "$NSCALE_ROOT"
   },
   "api": {
