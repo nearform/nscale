@@ -8,6 +8,7 @@ v0.16.0
 * Deployment queue, do one deployment at a time (@Nss)
 * Container names are now unique for each topology (@Nss) - __breaking
   change__.
+* new start/stop commands (@darragh-hayes)
 
 v0.15.3
 -------
