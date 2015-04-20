@@ -15,7 +15,7 @@
   "bin": {
     "nscale": "./node_modules/.bin/nscale",
     "nscale-init": "./lib/postinstall.js",
-    "nscale-server": "./node_modules/.bin/nscale-kernel"
+    "nscale-kernel": "./node_modules/.bin/nscale-kernel"
   },
   "repository": {
     "type": "git",
