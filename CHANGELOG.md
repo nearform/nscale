@@ -6,6 +6,8 @@ v0.16.0
 
 * AWS autoscaling support (@mcollina @Nss)
 * Deployment queue, do one deployment at a time (@Nss)
+* Container names are now unique for each topology (@Nss) - __breaking
+  change__.
 
 v0.15.3
 -------
