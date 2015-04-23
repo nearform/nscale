@@ -9,6 +9,8 @@ v0.16.0
 * Container names are now unique for each topology (@Nss) - __breaking
   change__.
 * new start/stop commands (@darragh-hayes)
+* A failing build in a buildall command should fail the command
+  (@mcollina) https://github.com/nearform/nscale-kernel/issues/94.
 
 v0.15.3
 -------
