@@ -19,6 +19,7 @@ v0.16.0
 * Added `autoCheckoutDir` option in the configs, which automatically
   populates the `checkoutDir` option to the git branch (@pelger,
   @mcollina).
+* Node v0.12 support.
 
 v0.15.3
 -------
