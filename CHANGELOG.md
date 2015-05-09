@@ -11,6 +11,14 @@ v0.16.0
 * new start/stop commands (@darragh-hayes)
 * A failing build in a buildall command should fail the command
   (@mcollina) https://github.com/nearform/nscale-kernel/issues/94.
+* Analyzer and check/fix cycle working on process-container (@mcollina).
+* New syntax for the definitions (@pelger).
+* Specify an optional commit message (@pelger).
+* Add `checkoutDir` option to the definitions, so a user can specify
+  where to check out the source code (@mcollina).
+* Added `autoCheckoutDir` option in the configs, which automatically
+  populates the `checkoutDir` option to the git branch (@pelger,
+  @mcollina).
 
 v0.15.3
 -------
