@@ -31,7 +31,7 @@ nscale can run in a local development configuration on a single system or as a m
 ![Local Mode](docs/images/localmode.png)
 
 In a development configuration, the nscale server and running containers live on the same system. This is a great way to get started with nscale or to use it for local development and testing.
-As an _experimental feature_, nscale supports running containers as processes, this mode is called 'process-container', and it supports automatic reloading if anything changes.
+As of v0.16, nscale supports running containers as processes, this mode is called 'process-container', and it supports automatic reloading if files are changed.
 
 ### Production configuration
 ![Local Mode](docs/images/remotemod.png)
@@ -39,7 +39,7 @@ As an _experimental feature_, nscale supports running containers as processes, t
 In a prodction configuration, the nscale server is installed on a managment instance and is configured to manage and control a set of controlled server instances. This configuration is commonly used on top of cloud infrastructure or on premesis servers.
 
 ## Quickstart
-These quickstart instructions will get you up and running with nscale in a local development configuration. For more advanced use cases including production configrations on top of AWS please see the documentation.
+These quickstart instructions will get you up and running with nscale in a local development configuration. For more advanced use cases including production configrations on top of AWS please see the [documentation](https://github.com/nearform/nscale-docs).
 
 ### Install docker
 
@@ -69,7 +69,7 @@ You may need to log out and log back in again for this change to take effect. To
 groups
 ```
 
-You should see that your user is included in the docker group. If this is not apparent you may need to close your current termial session and login again.
+You should see that your user is included in the docker group. If this is not apparent you may need to close your current terminal session and login again.
 
 __IMPORTANT!!!! nscale will not function correctly unless the group permissions are set as above__
 
@@ -81,10 +81,10 @@ We understand that there exist other operating systems, however at this time we 
 nscale is built using node.js. To install node, go to the [download page](http://www.nodejs.org) and install the appropritae binary for your system. 
 
 ### Install git
-nscale uses git as a backing store for system configuration and versioning. git can be installed using the package manager on your system of choice (i.e. homebrew on osx, apt-get on ubuntu...)
+nscale uses git as a backing store for system configuration and versioning. Git can be installed using the package manager on your system of choice (i.e. homebrew on osx, apt-get on ubuntu...)
 
 ### Configure github access
-Once git is installed, it should be configured for use with github if you wish to follow along with the nscale tutorials. You should run the following to set you username and email address:
+Once git is installed, it should be configured for use with github if you wish to follow along with the nscale tutorials. You should run the following to set your username and email address:
 
 ```sh
 git config --global user.name "<user name>"
@@ -104,7 +104,7 @@ nscale can be installed using npm. To install the latest version run:
 ```
 
 ### Preflight check
-Before running nscale please ensure that the termial you are running in is correctly configured with the above pre-requisties.
+Before running nscale please ensure that the terminal you are running in is correctly configured with the above pre-requisties.
 
 #### github
 Ensure github is correctly configured by checking the output of the following command
@@ -125,10 +125,13 @@ Note that this command should run __WITHOUT NEEDING SUDO__.
 __IMPORTANT!!! If the above checks do not run cleanly, please go back and check your configuration. Don't even think about starting nscale until this is corrected. Seriously... we mean it - We'll be very sad otherwise :(__
 
 ### Running nscale
+![start-stop](docs/images/start-stop.png)
+_nscale start/stop cycle._
+
 Now that everything is configured you are good to start nscale:
 
 ```sh
-nscale server start
+nscale start
 ```
 
 If you are running on Linux, you need to add yourself to the `docker`
@@ -138,15 +141,15 @@ group before running any `nscale` command. To do that:
 nscale login
 ```
 
-Finally lets check that nscale is good to go by running:
+Finally let's check that nscale is good to go by running:
 
 ```sh
-nscale system list
+nscale status
 ```
 
 You should see output similar to the following
 ```sh
-Name                           Id
+nscale-kernel { running: true, port: '3223', listening: true, pid: 1294 }
 ```
 
 ### Run a demo application
