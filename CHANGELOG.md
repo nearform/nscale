@@ -1,6 +1,13 @@
 Changelog
 =========
 
+v0.16.1
+-------
+
+* Re-shrinkwrapped.
+* Updated remote-forward to 1.7.0 to address
+  https://github.com/nearform/nscale/issues/88.
+
 v0.16.0
 -------
 
