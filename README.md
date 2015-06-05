@@ -54,7 +54,7 @@ boot2docker init
 boot2docker up
 ```
 
-__IMPORTANT!!!! - Follow the instructions given by boot2docker and ensure that the correct environement variables are set!__
+__IMPORTANT!!!! - Follow the instructions given by boot2docker and ensure that the correct environment variables are set!__
 
 #### Linux
 If you are on Linux, you will need to install [docker](http://docker.io). Once you have docker installed and running you will need to add your user account to the docker group. To do this run the following:
@@ -78,7 +78,7 @@ We understand that there exist other operating systems, however at this time we 
 
 ### Install node
 
-nscale is built using node.js. To install node, go to the [download page](http://www.nodejs.org) and install the appropritae binary for your system. 
+nscale is built using node.js. To install node, go to the [download page](http://www.nodejs.org) and install the appropriate binary for your system. 
 
 ### Install git
 nscale uses git as a backing store for system configuration and versioning. Git can be installed using the package manager on your system of choice (i.e. homebrew on osx, apt-get on ubuntu...)
@@ -104,7 +104,7 @@ nscale can be installed using npm. To install the latest version run:
 ```
 
 ### Preflight check
-Before running nscale please ensure that the terminal you are running in is correctly configured with the above pre-requisties.
+Before running nscale please ensure that the terminal you are running in is correctly configured with the above pre-requisites.
 
 #### github
 Ensure github is correctly configured by checking the output of the following command
@@ -169,7 +169,7 @@ This will create a sub directory named nscaledemo. You now need to link this rep
 nscale system link nscaledemo
 ```
 
-Check that the system was linked in correctly by running a system list command again. Which should now contian the linked system:
+Check that the system was linked in correctly by running a system list command again. Which should now contain the linked system:
 
 ```sh
 nscale system list
